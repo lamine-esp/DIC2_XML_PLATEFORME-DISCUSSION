@@ -1,6 +1,14 @@
+
+# Liens Utiles
+
+- [Plateforme de Discussion](https://dic2-xml-plateforme-discussion.onrender.com/)
+- [Monitoring Plateforme de Discussion](https://v0-next-js-polling-project.vercel.app/)
+
+---
+
 # Plateforme de Discussion en Ligne - Projet DSS XML
 
-## 📋 Description du Projet
+## Description du Projet
 
 Une plateforme de discussion en ligne développée en PHP avec stockage XML, permettant aux utilisateurs de :
 - Envoyer des messages et fichiers
@@ -9,7 +17,7 @@ Une plateforme de discussion en ligne développée en PHP avec stockage XML, per
 - Gérer leur profil utilisateur
 - Configurer leurs paramètres
 
-## 🏗️ Architecture du Projet
+## Architecture du Projet
 
 ```
 messaging-platform/
@@ -23,34 +31,34 @@ messaging-platform/
 └── README.md              # Documentation
 ```
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
-- **Backend** : PHP 8.0+
-- **Stockage** : XML avec SimpleXML
-- **Frontend** : HTML5, CSS3, JavaScript
-- **Validation** : DTD et XML Schema (XSD)
+- Backend : PHP 8.0+
+- Stockage : XML avec SimpleXML
+- Frontend : HTML5, CSS3, JavaScript
+- Validation : DTD et XML Schema (XSD)
 
-## 🚀 Installation et Utilisation
+## Installation et Utilisation
 
-1. **Prérequis** :
+1. Prérequis :
    - PHP 8.0 ou supérieur
    - Serveur web (Apache/Nginx) ou serveur PHP intégré
 
-2. **Installation** :
+2. Installation :
    ```bash
    # Cloner le projet
    git clone [url-du-projet]
    cd messaging-platform
-   
+
    # Démarrer le serveur PHP
    php -S localhost:8000
    ```
 
-3. **Accès** :
+3. Accès :
    - Ouvrir http://localhost:8000 dans votre navigateur
    - Créer un compte ou se connecter
 
-## 📁 Structure des Données XML
+## Structure des Données XML
 
 ### Utilisateurs (users.xml)
 ```xml
@@ -107,49 +115,49 @@ messaging-platform/
 </groups>
 ```
 
-## 👥 Fonctionnalités Principales
+## Fonctionnalités Principales
 
-### 🔐 Authentification
+### Authentification
 - Inscription et connexion utilisateur
 - Gestion des sessions sécurisées
 - Récupération de mot de passe
 
-### 💬 Messagerie
+### Messagerie
 - Envoi de messages texte
 - Envoi de fichiers (images, documents)
 - Messages privés et de groupe
 - Historique des conversations
 
-### 👥 Gestion des Contacts
+### Gestion des Contacts
 - Ajout/suppression de contacts
 - Recherche d'utilisateurs
 - Statut en ligne/hors ligne
 
-### 👥 Groupes de Discussion
+### Groupes de Discussion
 - Création de groupes
 - Invitation de membres
 - Gestion des rôles (admin/membre)
 - Messages de groupe
 
-### 👤 Profil Utilisateur
+### Profil Utilisateur
 - Modification des informations personnelles
 - Upload d'avatar
 - Paramètres de confidentialité
 
-### ⚙️ Paramètres
+### Paramètres
 - Notifications
 - Thème (clair/sombre)
 - Langue
 - Paramètres de sécurité
 
-## 🔒 Sécurité
+## Sécurité
 
 - Hachage des mots de passe avec `password_hash()`
 - Validation des données XML
 - Protection contre les injections
 - Gestion des sessions sécurisées
 
-## 📝 Validation XML
+## Validation XML
 
 Le projet utilise des schémas DTD et XSD pour valider la structure des données XML :
 
@@ -157,24 +165,25 @@ Le projet utilise des schémas DTD et XSD pour valider la structure des données
 - `schemas/messages.dtd` - Structure des messages
 - `schemas/groups.dtd` - Structure des groupes
 
-## 🧪 Tests
+## Tests
 
 Pour exécuter les tests :
 ```bash
 php tests/run_tests.php
 ```
 
-## 📄 Licence
+## Licence
 
 Ce projet est développé dans le cadre du cours DSS XML.
 
-## 👨‍💻 Équipe de Développement
+## Équipe de Développement
 
-- [Nom du membre 1]
-- [Nom du membre 2]
-- [Nom du membre 3]
+- Mariama Baldé (INFORMATIQUE)
+- Elhadji Saloum Cissé (TÉLÉCOMS ET RÉSEAUX)
+- Mouhamed Lamine Faye (INFORMATIQUE)
+- Cheikh Ahmed Tidiane Thiadoum (INFORMATIQUE)
 
 ---
 
-**Date de présentation** : 16 juillet 2025
-**Version** : 1.0.0 
+Date de présentation : 16 juillet 2025  
+Version : 1.0.0
