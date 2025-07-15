@@ -7,7 +7,7 @@ FROM php:8.2-apache
 # Si besoin d'autres extensions, ajoutez-les ici
 # RUN docker-php-ext-install <autre_extension>
 
-# Active tous les modules Apache requis (.htaccess)
+# Active tous les modules Apache requis (.htaccess.ignore)
 RUN a2enmod rewrite deflate expires headers
 
 # Copie le code de l'application dans le conteneur
