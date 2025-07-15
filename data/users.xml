@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE users SYSTEM "../schemas/users.dtd">
+<users>
+  <user id="1" status="online" role="admin" is_active="true" is_verified="true">
+    <username>admin</username>
+    <email>admin@messaging.com</email>
+    <password_hash>$2y$10$yc7p4jMmaklDTYom9hDrPet8IkhnxH9J1eDXe9Z/6AZABornCCnzy</password_hash>
+    <profile>
+      <first_name>Administrateur</first_name>
+      <last_name>Système</last_name>
+      <avatar>admin_avatar.jpg</avatar>
+      <bio>Administrateur de la plateforme</bio>
+    </profile>
+    <settings>
+      <notifications>true</notifications>
+      <theme>light</theme>
+      <language>fr</language>
+      <privacy_level>public</privacy_level>
+    </settings>
+    <created_at>2024-01-01T00:00:00</created_at>
+    <last_login>2025-07-15T01:35:42</last_login>
+  </user>
+  <user id="2" status="offline" role="user" is_active="true" is_verified="true">
+    <username>mariama</username>
+    <email>mariama@messaging.com</email>
+    <password_hash>$2y$10$3iUsFIrehkTKFy.IsxaYu.1QszjlRmPakG3tEo52rt8FFzRLumTCy</password_hash>
+    <profile>
+      <first_name>mariama</first_name>
+      <last_name/>
+      <avatar/>
+      <bio/>
+    </profile>
+    <settings>
+      <notifications>true</notifications>
+      <theme>dark</theme>
+      <language>en</language>
+      <privacy_level>public</privacy_level>
+    </settings>
+    <created_at>2024-01-01T00:00:00</created_at>
+    <last_login>2025-07-15T03:41:13</last_login>
+  </user>
+  <user id="3" status="offline" role="user" is_active="true" is_verified="false">
+    <username>nighteyes</username>
+    <email>nighteyes@gmail.com</email>
+    <password_hash>$2y$12$yu/P2Fl7.6g5zdAR5WVupemGQcQK8izRtiBs7E1zK7g8cL0PPTx9W</password_hash>
+    <profile>
+      <first_name>elhadji</first_name>
+      <last_name>cisse</last_name>
+      <avatar/>
+      <bio/>
+    </profile>
+    <settings>
+      <notifications>true</notifications>
+      <theme>light</theme>
+      <language>fr</language>
+      <privacy_level>public</privacy_level>
+    </settings>
+    <created_at>2025-07-15T03:11:37</created_at>
+    <last_login>2025-07-15T03:41:34</last_login>
+  </user>
+  <user id="4" status="offline" role="user" is_active="true" is_verified="false">
+    <username>thiandoum</username>
+    <email>thiandoum@esp.sn</email>
+    <password_hash>$2y$12$4.UOsyy5slRDBYH6wiN4Eu1t/R3RPcJ6b8cgUznO4cxEqh.fU5JKS</password_hash>
+    <profile>
+      <first_name>tidiane</first_name>
+      <last_name>thiandoum</last_name>
+      <avatar/>
+      <bio/>
+    </profile>
+    <settings>
+      <notifications>true</notifications>
+      <theme>light</theme>
+      <language>fr</language>
+      <privacy_level>public</privacy_level>
+    </settings>
+    <created_at>2025-07-15T03:34:34</created_at>
+    <last_login>2025-07-15T03:40:57</last_login>
+  </user>
+  <user id="5" status="offline" role="user" is_active="true" is_verified="false">
+    <username>lamine</username>
+    <email>lamine@esp.sn</email>
+    <password_hash>$2y$12$fcADQLR/hWH2FRzcuBDa3ufTeD.j9jlnvW4auRwZoatniwC1SB1LW</password_hash>
+    <profile>
+      <first_name>lamine</first_name>
+      <last_name>faye</last_name>
+      <avatar/>
+      <bio/>
+    </profile>
+    <settings>
+      <notifications>true</notifications>
+      <theme>light</theme>
+      <language>fr</language>
+      <privacy_level>public</privacy_level>
+    </settings>
+    <created_at>2025-07-15T03:37:05</created_at>
+    <last_login>2025-07-15T03:37:20</last_login>
+  </user>
+</users>

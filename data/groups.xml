@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE groups SYSTEM "../schemas/groups.dtd">
+<groups>
+  <group id="1" is_active="true">
+    <name>Équipe Projet DSS</name>
+    <description>Groupe de travail pour le projet de plateforme de discussion</description>
+    <created_by>1</created_by>
+    <created_at>2024-01-10T09:00:00</created_at>
+    <members>
+      <member user_id="1" role="admin" joined_at="2024-01-10T09:00:00"/>
+    </members>
+    <settings>
+      <privacy>private</privacy>
+      <notifications>true</notifications>
+      <max_members>20</max_members>
+    </settings>
+  </group>
+  <group id="6" is_active="false">
+    <name>commission lab </name>
+    <description>losgoat</description>
+    <created_by>1</created_by>
+    <created_at>2025-07-13T18:30:12</created_at>
+    <members>
+      <member user_id="1" role="admin" joined_at="2025-07-13T18:30:12"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="7" is_active="false">
+    <name>commission lab </name>
+    <description>31A</description>
+    <created_by>1</created_by>
+    <created_at>2025-07-15T01:09:04</created_at>
+    <members>
+      <member user_id="1" role="admin" joined_at="2025-07-15T01:09:04"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="8" is_active="false">
+    <name>commission lab </name>
+    <description>31A</description>
+    <created_by>1</created_by>
+    <created_at>2025-07-15T01:09:04</created_at>
+    <members>
+      <member user_id="1" role="admin" joined_at="2025-07-15T01:09:04"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="9" is_active="false">
+    <name>pompe electrique</name>
+    <description>fff</description>
+    <created_by>2</created_by>
+    <created_at>2025-07-15T01:51:18</created_at>
+    <members>
+      <member user_id="2" role="admin" joined_at="2025-07-15T01:51:18"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="10" is_active="true">
+    <name>pompe electrique</name>
+    <description>fff</description>
+    <created_by>2</created_by>
+    <created_at>2025-07-15T01:51:18</created_at>
+    <members>
+      <member user_id="2" role="admin" joined_at="2025-07-15T01:51:18"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="11" is_active="false">
+    <name>elhadjinodered_DATABASE</name>
+    <description>fgf</description>
+    <created_by>2</created_by>
+    <created_at>2025-07-15T03:16:34</created_at>
+    <members>
+      <member user_id="2" role="admin" joined_at="2025-07-15T03:16:34"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="12" is_active="false">
+    <name>elhadjinodered_DATABASE</name>
+    <description>fgf</description>
+    <created_by>2</created_by>
+    <created_at>2025-07-15T03:16:34</created_at>
+    <members>
+      <member user_id="2" role="admin" joined_at="2025-07-15T03:16:34"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+  <group id="13" is_active="false">
+    <name>fg</name>
+    <description>fg</description>
+    <created_by>2</created_by>
+    <created_at>2025-07-15T03:21:06</created_at>
+    <members>
+      <member user_id="2" role="admin" joined_at="2025-07-15T03:21:06"/>
+    </members>
+    <settings>
+      <privacy>public</privacy>
+      <notifications>true</notifications>
+      <max_members>100</max_members>
+    </settings>
+  </group>
+</groups>

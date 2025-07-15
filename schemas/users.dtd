@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE users [
+    <!ELEMENT users (user*)>
+    <!ELEMENT user (username, email, password_hash, profile, settings, created_at, last_login?)>
+    <!ELEMENT username (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT password_hash (#PCDATA)>
+    <!ELEMENT profile (first_name, last_name, avatar?, bio?)>
+    <!ELEMENT first_name (#PCDATA)>
+    <!ELEMENT last_name (#PCDATA)>
+    <!ELEMENT avatar (#PCDATA)>
+    <!ELEMENT bio (#PCDATA)>
+    <!ELEMENT settings (notifications, theme, language, privacy_level)>
+    <!ELEMENT notifications (#PCDATA)>
+    <!ELEMENT theme (#PCDATA)>
+    <!ELEMENT language (#PCDATA)>
+    <!ELEMENT privacy_level (#PCDATA)>
+    <!ELEMENT created_at (#PCDATA)>
+    <!ELEMENT last_login (#PCDATA)>
+    
+    <!ATTLIST user id CDATA #REQUIRED>
+    <!ATTLIST user status (online|offline|away|busy) "offline">
+    <!ATTLIST user role (user|admin|moderator) "user">
+    <!ATTLIST user is_active (true|false) "true">
+    <!ATTLIST user is_verified (true|false) "false">
+]> 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE messages SYSTEM "../schemas/messages.dtd">
+<messages>
+  <message id="4" type="file" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>group</recipient_type>
+    <recipient_id>1</recipient_id>
+    <content>Document de présentation du projet</content>
+    <timestamp>2024-01-15T09:00:00</timestamp>
+    <attachments>
+      <file name="presentation.pdf" size="2048576" type="application/pdf">presentation.pdf</file>
+    </attachments>
+    <is_read>true</is_read>
+  </message>
+  <message id="11" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>group</recipient_type>
+    <recipient_id>1</recipient_id>
+    <content>bonjour  &#13;
+&#13;
+</content>
+    <timestamp>2025-07-13T18:20:53</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="12" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>group</recipient_type>
+    <recipient_id>1</recipient_id>
+    <content>bonjour  cv </content>
+    <timestamp>2025-07-13T18:21:03</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="13" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>group</recipient_type>
+    <recipient_id>1</recipient_id>
+    <content>hello &#13;
+</content>
+    <timestamp>2025-07-13T18:31:12</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="22" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>user</content>
+    <timestamp>2025-07-13T20:11:38</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="23" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>bvv</content>
+    <timestamp>2025-07-13T20:11:38</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="24" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>user</content>
+    <timestamp>2025-07-13T20:11:43</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="25" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>f</content>
+    <timestamp>2025-07-13T20:11:43</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="26" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>2</content>
+    <timestamp>2025-07-15T01:50:21</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="27" type="text" is_edited="false" is_deleted="false">
+    <sender_id>1</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>2</recipient_id>
+    <content>hello</content>
+    <timestamp>2025-07-15T01:50:21</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="28" type="text" is_edited="false" is_deleted="false">
+    <sender_id>2</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>1</content>
+    <timestamp>2025-07-15T03:13:23</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="29" type="text" is_edited="false" is_deleted="false">
+    <sender_id>2</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>user</recipient_id>
+    <content>3</content>
+    <timestamp>2025-07-15T03:15:01</timestamp>
+    <is_read>false</is_read>
+  </message>
+  <message id="30" type="text" is_edited="false" is_deleted="false">
+    <sender_id>2</sender_id>
+    <recipient_type>user</recipient_type>
+    <recipient_id>3</recipient_id>
+    <content>bonjour elhadji ,ionima cours admin sys bi stpl</content>
+    <timestamp>2025-07-15T03:15:01</timestamp>
+    <is_read>true</is_read>
+  </message>
+</messages>

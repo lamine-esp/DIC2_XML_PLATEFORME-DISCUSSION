@@ -1,0 +1,105 @@
+# Configuration Apache pour la Plateforme de Discussion
+# Sécurité et optimisation
+
+# Protection contre l'accès direct aux fichiers sensibles
+<Files "*.xml">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.dtd">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Protection du dossier data
+<Directory "data">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+# Protection du dossier includes
+<Directory "includes">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+# Protection du dossier schemas
+<Directory "schemas">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+# Compression GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Cache des ressources statiques
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/ico "access plus 1 month"
+    ExpiresByType image/icon "access plus 1 month"
+    ExpiresByType text/plain "access plus 1 month"
+</IfModule>
+
+# Headers de sécurité
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Redirection des erreurs
+ErrorDocument 404 /index.php?page=404
+ErrorDocument 403 /index.php?page=404
+
+# Protection contre les attaques
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Bloquer les tentatives d'accès aux fichiers sensibles
+    RewriteRule ^(config|includes|data|schemas)/ - [F,L]
+    
+    # Bloquer les tentatives d'injection
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+    RewriteCond %{QUERY_STRING} mosConfig [OR]
+    RewriteCond %{QUERY_STRING} base64_(en|de)code [OR]
+    RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC]
+    RewriteRule .* - [F]
+</IfModule>
+
+# Limiter la taille des uploads
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+# Désactiver l'affichage des erreurs en production
+php_flag display_errors off
+php_flag log_errors on 

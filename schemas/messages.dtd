@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE messages [
+    <!ELEMENT messages (message*)>
+    <!ELEMENT message (sender_id, recipient_type, recipient_id, content, timestamp, attachments?, is_read?)>
+    <!ELEMENT sender_id (#PCDATA)>
+    <!ELEMENT recipient_type (user|group)>
+    <!ELEMENT recipient_id (#PCDATA)>
+    <!ELEMENT content (#PCDATA)>
+    <!ELEMENT timestamp (#PCDATA)>
+    <!ELEMENT attachments (file*)>
+    <!ELEMENT file (#PCDATA)>
+    <!ELEMENT is_read (#PCDATA)>
+    
+    <!ATTLIST message id CDATA #REQUIRED>
+    <!ATTLIST message type (text|file|image|system) "text">
+    <!ATTLIST message is_edited (true|false) "false">
+    <!ATTLIST message is_deleted (true|false) "false">
+    <!ATTLIST file name CDATA #REQUIRED>
+    <!ATTLIST file size CDATA #IMPLIED>
+    <!ATTLIST file type CDATA #IMPLIED>
+]> 

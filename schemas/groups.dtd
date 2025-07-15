@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE groups [
+    <!ELEMENT groups (group*)>
+    <!ELEMENT group (name, description, created_by, created_at, members, settings?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT created_by (#PCDATA)>
+    <!ELEMENT created_at (#PCDATA)>
+    <!ELEMENT members (member*)>
+    <!ELEMENT member EMPTY>
+    <!ELEMENT settings (privacy, notifications, max_members?)>
+    <!ELEMENT privacy (public|private|secret)>
+    <!ELEMENT notifications (true|false)>
+    <!ELEMENT max_members (#PCDATA)>
+    
+    <!ATTLIST group id CDATA #REQUIRED>
+    <!ATTLIST group is_active (true|false) "true">
+    <!ATTLIST member user_id CDATA #REQUIRED>
+    <!ATTLIST member role (admin|moderator|member) "member">
+    <!ATTLIST member joined_at CDATA #IMPLIED>
+]> 
