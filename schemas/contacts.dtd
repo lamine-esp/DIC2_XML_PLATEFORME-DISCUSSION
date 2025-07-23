@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contacts [
+        <!ELEMENT contacts (contact*)>
+
+        <!ELEMENT contact (user_id, contact_user_id, first_name?, last_name?, phone_number?, nickname, created_at, is_favorite, type)>
+        <!ATTLIST contact id ID #REQUIRED>
+
+        <!ELEMENT user_id (#PCDATA)>
+        <!ELEMENT contact_user_id (#PCDATA)>
+        <!ELEMENT first_name (#PCDATA)>
+        <!ELEMENT last_name (#PCDATA)>
+        <!ELEMENT phone_number (#PCDATA)>
+        <!ELEMENT nickname (#PCDATA)>
+        <!ELEMENT created_at (#PCDATA)>
+        <!ELEMENT is_favorite (#PCDATA)>
+        <!ELEMENT type (#PCDATA)>
+]>
